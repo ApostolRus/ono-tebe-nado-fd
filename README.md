@@ -1,1 +1,1 @@
-https://github.com/ApostolRus/ono-tebe-nado-fd#
+https://github.com/ApostolRus/ono-tebe-nado-fd
