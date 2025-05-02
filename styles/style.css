@@ -1,10 +1,4 @@
 /* Общие стили */
-.body {
-  width: 1100px;
-  background-color: #1db69c;
-  background-clip: content-box; /* Фон только внутри контента */
-  
-}
 
 .header {
   display: grid;
@@ -44,14 +38,11 @@
   line-height: 1.5;
   justify-self: end;
   width: 240px;
-  height: 98px;
   border-width: 1px;
 }
 
 .address p {
   width: 210px;
-  height: 49px;
-  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -59,6 +50,7 @@
 }
 
 .address a {
+  font-size: 18px;
   letter-spacing: 0.07em;
   text-underline-offset: 4px;
 }
@@ -69,7 +61,7 @@
   padding: 165px 50px 50px;
   background: url(../images/cover.jpg) no-repeat center/cover;
   width: 1100px;
-  height: 757px;
+  min-height: 757px;
   left: 0px;
 }
 
@@ -87,7 +79,6 @@
   font-size: 100px;
   text-transform: uppercase;
   width: 1000px;
-  height: 385px;
 }
 
 .aligned-text {
@@ -117,12 +108,12 @@
 }
 
 .cover__description {
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  padding-top: 109px;
   width: 1000px;
-  top: 656px;
   z-index: 2;
 }
 
@@ -144,8 +135,9 @@
   background-color: transparent;
   width: 256px;
   height: 51px;
-  left: 794px;
-  top: 656px;
+  min-width: 256px;
+  min-height: 50px;
+  border: 1px solid #ffffff;
 }
 
 /* Секция лотов */
@@ -205,6 +197,9 @@
   position: relative;
   z-index: 2;
   font-size: 20px;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  background-image: none !important;
 }
 
 .lots__look-more-link {
@@ -212,6 +207,17 @@
   font-size: 20px;
   line-height: 4.2em;
   text-underline-offset: 4px;
+}
+
+.card-link {
+  text-decoration: none !important;
+  display: block;
+  height: 100%;
+}
+
+.lots__card-list a:hover,
+.lots__card-list a:focus {
+  text-decoration: none !important;
 }
 
 /* Секция "Об аукционе" */
@@ -247,16 +253,46 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  
-
+  margin-bottom: 26px;
 }
 
+.about__text p {
+  margin-bottom: 26px;
+}
 
 /* Подвал */
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 180px 50px 90px;
+  padding: 54px 50px 90px;
+}
+
+.footer__address {
+  font-style: normal;
+  justify-self: start;
+  width: 240px;
+  border-width: 1px;
+}
+
+.footer__address a {
+  font-size: 18px;
+  vertical-align: 2px;
+  text-underline-offset: 4px;
+}
+
+.footer__address p {
+  width: 264px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/*МЕНЮ Подвала*/
+.footer__menu {
+  font-weight: 400;
+  font-size: 18px;
+  text-underline-offset: 4px;
 }
 
 .footer__menu-list {
@@ -264,6 +300,17 @@
   text-align: center;
 }
 
+.footer__links-list {
+  display: flex;
+  gap: 32px;
+  list-style: circle;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+/* socials ссылки на сети */
 .footer__social-list {
   display: flex;
   gap: 48px;
