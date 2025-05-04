@@ -1,4 +1,4 @@
-/* Общие стили */
+/* Общие стили v.3*/
 
 /* Шапка сайта*/
 
@@ -10,10 +10,8 @@
 }
 
 .header__menu {
-  margin-top: -4px;
   font-weight: 400;
   font-size: 18px;
-  height: 22px;
   text-underline-offset: 4px;
 }
 
@@ -54,12 +52,24 @@
 }
 
 .address p {
-  width: 210px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
 }
+
+.header .address {
+  justify-self: end;
+}
+
+.footer .address {
+  justify-self: start;
+}
+
+.address__text {
+  width: 264px; /* Или 264px для футера, если нужно отличие */
+}
+
 
 /* Обложка */
 .cover {
@@ -139,8 +149,6 @@
   text-align: center;
   color: #fff;
   background-color: transparent;
-  width: 256px;
-  height: 51px;
   min-width: 256px;
   min-height: 50px;
   border: 1px solid #ffffff;
@@ -203,9 +211,9 @@
   position: relative;
   z-index: 2;
   font-size: 20px;
-  text-decoration: none !important;
-  border-bottom: none !important;
-  background-image: none !important;
+  text-decoration: none;
+  border-bottom: none;
+  background-image: none;
 }
 
 .lots__look-more-link {
@@ -216,14 +224,14 @@
 }
 
 .card-link {
-  text-decoration: none !important;
+  text-decoration: none;
   display: block;
   height: 100%;
 }
 
 .lots__card-list a:hover,
 .lots__card-list a:focus {
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
 /* Секция "Об аукционе" */
@@ -255,7 +263,6 @@
 }
 
 .about__text {
-  font-family: Raleway;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
@@ -271,27 +278,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 54px 50px 90px;
-}
-
-.footer__address {
-  font-style: normal;
-  justify-self: start;
-  width: 240px;
-  border-width: 1px;
-}
-
-.footer__address a {
-  font-size: 18px;
-  vertical-align: 2px;
-  text-underline-offset: 4px;
-}
-
-.footer__address p {
-  width: 264px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
 }
 
 /*МЕНЮ Подвала*/
